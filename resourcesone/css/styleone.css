@@ -1,0 +1,510 @@
+/*google free font cdn call*/
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --nf: "Newsreader", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.common_pa {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+h2 {
+  letter-spacing: 2px;
+}
+
+h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.slider {
+  padding: 100px 0;
+  background: #290000;
+  position: relative;
+}
+
+/* header section start css */
+header .logo {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 300px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all linear 0.3s;
+}
+
+header.sticky {
+  background: #290000;
+  padding: 20px 175px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .navigation {
+  position: relative;
+  display: flex;
+}
+
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
+  transition: all linear 0.3s;
+}
+
+header.sticky .navigation li a:hover {
+  padding-bottom: 45px;
+  border-bottom: 2px solid red;
+}
+
+header .navigation li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+header .navigation li a:hover {
+  color: tomato;
+}
+
+.logo_heading {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.logo_pa {
+  font-size: 13px;
+  color: #979797;
+  margin-top: 0;
+}
+/* header section ends css */
+
+/* == */
+.carousel-padd {
+  padding: 0 149px;
+  padding-bottom: 140px;
+  padding-top: 160px;
+  background: #290000;
+}
+.carousel_1st_div {
+  margin-top: 50px;
+}
+.carousel_1st_div a {
+  color: tomato;
+}
+.carousel_1st_div,
+a,
+font,
+p,
+strong {
+  margin-bottom: 0;
+}
+.carousel_1st_div h2 {
+  font-size: 46px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.my_lead {
+  font-size: 15px;
+  color: #979797;
+  margin-top: 20px;
+}
+.carousel_btn {
+  background: #76c38f;
+  padding: 10px 24px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.carousel_btn a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.carousel_btn a:hover {
+  color: gold;
+}
+.carousel-control-prev-icon {
+  background-image: url(../../images/carousel/left.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-control-next-icon {
+  background-image: url(../../images/carousel/right.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 20px;
+  height: 40px;
+}
+
+/* team section start */
+.team_section {
+  background: #600;
+  padding: 128px 0;
+}
+.my_cards {
+  margin: auto;
+  width: 255px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.my_cards img {
+  width: 253px;
+  height: 450px;
+}
+.my_cards .overlay {
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  top: 450px;
+  transition: all linear 0.3s;
+  position: absolute;
+  text-align: center;
+  padding: 25px 10px;
+  padding-top: 41px;
+  z-index: 9;
+}
+.my_cards .overlay-2 {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.59);
+  top: -100%;
+  border-radius: 10px;
+  transition: all linear 0.3s;
+  position: absolute;
+}
+.my_cards:hover .overlay-2 {
+  top: 0;
+}
+.card-title {
+  font-size: 21px;
+}
+.my_cards span {
+  font-size: 14px;
+}
+.my_cards:hover .overlay {
+  top: 225px;
+}
+.card_social_link {
+  margin-top: 28px;
+}
+.my_cards .overlay .card_social_link ul {
+  position: absolute;
+  display: flex;
+}
+.my_cards .overlay .card_social_link ul li {
+  list-style: none;
+}
+.my_cards .overlay .card_social_link ul li a {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: all linear 0.3s;
+}
+.my_cards .overlay .card_social_link ul li a:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.my_cards .overlay .card_social_link ul li a .fab {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size: 16px;
+  color: #262626;
+  transition: all linear 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my_cards .overlay .card_social_link ul li:nth-child(1) a:hover .fab {
+  color: #3b5998;
+}
+.my_cards .overlay .card_social_link ul li:nth-child(2) a:hover .fab {
+  color: #00aced;
+}
+.my_cards .overlay .card_social_link ul li:nth-child(3) a:hover .fab {
+  color: #517fa4;
+}
+.my_cards .overlay .card_social_link ul li:nth-child(4) a:hover .fab {
+  color: #007bb6;
+}
+.my_cards img {
+  border-radius: 10px;
+}
+.team_heading {
+  margin-bottom: 68px;
+}
+.team_heading h2 {
+  color: #fff;
+  text-align: center;
+}
+.team_heading p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.extra_section {
+  background: #600;
+  padding: 20px 0;
+  text-align: center;
+}
+.roll {
+  background: #303030;
+  height: 4px;
+  width: 1140px;
+  margin-top: 12px;
+  position: absolute;
+}
+.latext_work {
+  margin: auto;
+  position: relative;
+}
+.latext_work a {
+  background: #303030;
+  padding: 15px 30px;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+}
+.latext_work a:hover {
+  color: gold;
+}
+/* team section ends */
+
+.service_section {
+  padding-top: 120px;
+  padding-bottom: 203px;
+  background-color: #290000;
+}
+.service_heading {
+  margin-bottom: 91px;
+}
+.service_heading h2 {
+  color: #fff;
+  text-align: center;
+}
+.service_heading .common_pa {
+  padding: 0 309px;
+}
+.service_box img {
+  text-align: center;
+  margin: auto;
+}
+.service_box img:hover {
+  transform: scale(1.1);
+}
+.service_box p {
+  color: #fff;
+  text-align: center;
+}
+.service_box h3 {
+  margin-top: 40px;
+  text-align: center;
+}
+.skill_section {
+  padding: 150px 0;
+  background: #600;
+}
+.skill_heading {
+  margin-bottom: 100px;
+}
+.skill_heading h2 {
+  color: #fff;
+  text-align: center;
+}
+.skill_heading .common_pa {
+  padding: 0 309px;
+}
+svg.radial-progress text {
+  fill: #adff2f;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+svg.radial-progress circle {
+  stroke-width: 7;
+}
+.web_design svg.radial-progress circle {
+  stroke: #76c38f;
+}
+.html_css svg.radial-progress circle {
+  stroke: #daa520;
+}
+.graphic_design svg.radial-progress circle {
+  stroke: tomato;
+}
+.ui_ux_design svg.radial-progress circle {
+  stroke: #f08080;
+}
+/* OUR PORTFOLIO START CSS */
+.portfolio_section {
+  background: #76c38f;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.portfolio_heading h2 {
+  text-align: center;
+  color: #fff;
+}
+.portfolio_heading .common_pa {
+  padding: 0 309px;
+}
+.button_grou button {
+  background: #979797;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.portfolio_img img {
+  cursor: pointer;
+}
+.portfolio_img img:hover {
+  transform: scale(1.1);
+}
+.button_grou button:hover {
+  color: gold;
+  box-shadow: inset 4px 6px 4px #fff;
+}
+.contact_section {
+  padding-top: 150px;
+  background: #84798f;
+}
+.contact_heading h2 {
+  color: #fff;
+  text-align: center;
+}
+.contact_heading .common_hr {
+  background: #979797;
+}
+.message-character {
+  font-size: 13px;
+  font-family: ;
+  color: tomato;
+  font-weight: ;
+}
+#character {
+  font-family: var(--nf);
+  font-weight: ;
+  color: tomato;
+}
+.send_button {
+  background: #76c38f;
+  padding: 10px 20px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.send_button:hover {
+  color: gold;
+}
+.footer_section {
+  background: #303030;
+  border-bottom: 2px solid #000;
+}
+.footer_box_1 a {
+  text-decoration: none;
+}
+.footer_box_1 p {
+  color: gray;
+}
+.footer_box_2 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer_box_2 ul li {
+  line-height: 50px;
+  border-bottom: 1px solid gray;
+  color: gray;
+}
+.footer_box_2 ul li a {
+  color: #76c38f;
+  font-size: 18px;
+}
+.footer_box_4 input[type="email"],
+.footer_box_4 input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.footer_box_4 select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.footer_box_4 textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+.submit_button {
+  background: #76c38f;
+  color: #fff;
+}
+.footer_section {
+  background: #2b2b2b;
+  border-top: 1px solid gray;
+}
+.footer-bottom-box p {
+  color: gray;
+}
